@@ -1,0 +1,260 @@
+/* Layout container styles */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure layout takes full height */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+/* Main content styling for layout */
+.main-content {
+  flex: 1; /* Allow the content to expand and take available space */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+/* Home-specific styles */
+.home {
+  color: white;
+  height: 100vh; /* Ensure the home section takes full viewport height */
+  margin: 0;
+  padding: 0; /* Ensure no extra padding or margin */
+  background-color: #000; /* Black background for homepage only */
+  overflow: hidden; /* Prevent extra space */
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://a.storyblok.com/f/213807/1600x800/526cc101e9/finance-tech-midsize.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh; /* Ensure full height coverage */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effects */
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3); /* Light box-shadow for better contrast */
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3); /* Light box-shadow for better contrast */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent card background */
+  border: 5px solid rgba(255, 255, 255, 0.3); /* Light border */
+  display: flex;
+  aspect-ratio: 3 / 1;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Glow effect on hover */
+.card:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Glow effect */
+}
+
+/* Custom button styling */
+.btn-custom {
+  width: 40%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.btn-light {
+  border: none;
+  background: transparent;
+}
+
+/* Common background styles for Home and Login pages */
+.page-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://a.storyblok.com/f/213807/1600x800/526cc101e9/finance-tech-midsize.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh; /* Ensure full height coverage */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; /* Ensure text is white */
+}
+
+.login-page {
+  color: white;
+}
+
+.card-registration {
+  max-width: 600px;
+  width: 100%;
+  margin: 1rem;
+}
+
+.card-login {
+  max-width: 400px;
+  width: 100%;
+}
+.form-label {
+  text-align: left; /* Align text to the left */
+  display: block; /* Ensure the label takes full width */
+}
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #f1f1f1; /* Space around the scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker on hover */
+}
+
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent card background */
+  border: 5px solid rgba(255, 255, 255, 0.3); /* Light border */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  width: 90%; /* Reduce width */
+  max-width: 500px; /* Set a max width for cards */
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: auto; /* Center cards */
+}
+
+/* Glow effect on hover */
+.feature-card:hover {
+  transform: scale(1.02); /* Slightly increase size on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Glow effect */
+}
+.card .card-title {
+  font-size: 1.6rem; /* Ensure this targets the title correctly */
+}
+
+.card .card-text {
+  font-size: 1.2rem; /* Increase size for text */
+}
+
+.about-title {
+  font-size: 3rem; /* Adjust to your preferred size */
+  font-weight: bold; /* Optional: make the title bold */
+  margin-bottom: 1rem; /* Optional: add spacing below the title */
+}
+
+.about-description {
+  font-size: 1.5rem; /* Adjust to your preferred size */
+  line-height: 1.5; /* Optional: improve readability */
+}
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.feature-card:hover {
+  transform: scale(1.02); /* Slightly increase size on hover */
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9); /* Increase glow effect */
+}
+.dashboard-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://a.storyblok.com/f/213807/1600x800/526cc101e9/finance-tech-midsize.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh; /* Ensure full height coverage */
+  display: flex; /* Use flex to align content vertically if needed */
+  flex-direction: column; /* Align children in a column */
+  justify-content: flex-start; /* Start from the top */
+  color: white; /* Ensure text is white */
+}
+.applications-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://a.storyblok.com/f/213807/1600x800/526cc101e9/finance-tech-midsize.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh; /* Ensure full height coverage */
+  display: flex; /* Use flex to align content vertically if needed */
+  flex-direction: column; /* Align children in a column */
+  justify-content: flex-start; /* Start from the top */
+  color: white; /* Ensure text is white */
+}
+.profile-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url("https://a.storyblok.com/f/213807/1600x800/526cc101e9/finance-tech-midsize.jpg");
+  background-size: cover;
+  min-height: 100vh; /* Ensure it covers the entire viewport height */
+  padding-top: 60px; /* Adjust this based on your navbar height */
+}
+.profile-card {
+  border-radius: 15px; /* Rounded corners */
+  max-width: 500px; /* Medium size */
+  margin: 0 auto; /* Centering the card */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+}
+
+.profile-card .card-header {
+  border-top-left-radius: 15px; /* Round the top left corner */
+  border-top-right-radius: 15px; /* Round the top right corner */
+}
+
+.manager-dashboard-background {
+  background:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://a.storyblok.com/f/213807/1600x800/526cc101e9/finance-tech-midsize.jpg");
+  background-size: cover;
+  min-height: 100vh; /* Ensure it covers the entire viewport height */
+  padding-top: 10px; /* Adjust this based on your navbar height */
+}
+
+
+.modal-content {
+  overflow: hidden; /* Ensures no scroll bars appear */
+  max-height: 100%; /* Adjusts height to prevent overflow */
+}
+.modal-body {
+  overflow-y: auto; /* Enables vertical scrolling only if needed */
+  max-height: calc(100vh - 150px); /* Keeps the modal within the viewport */
+}
